@@ -1,11 +1,9 @@
 const pageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "Test Uptime",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    
   ],
 }
 
@@ -18,7 +16,7 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
     {
-      id: 'test_tcp_monitor',
+      id: 'test_monitor',
       name: 'Test',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
@@ -32,12 +30,12 @@ const workerConfig = {
   notification: {
     // [Optional] apprise API server URL
     // if not specified, no notification will be sent
-    appriseApiServer: "https://apprise.example.com/notify",
+    appriseApiServer: "",
     // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
     // if not specified, no notification will be sent
-    recipientUrl: "tgram://bottoken/ChatID",
+    recipientUrl: "",
     // [Optional] timezone used in notification messages, default to "Etc/GMT"
-    timeZone: "Asia/Shanghai",
+    timeZone: "Asia/Thailand",
     // [Optional] grace period in minutes before sending a notification
     // notification will be sent only if the monitor is down for N continuous checks after the initial failure
     // if not specified, notification will be sent immediately
