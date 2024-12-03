@@ -23,7 +23,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '23.168.86.140',
+      target: '165.225.230.122',
       tooltip: 'My production server SSH',
       statusPageLink: '',
       timeout: 5000,
